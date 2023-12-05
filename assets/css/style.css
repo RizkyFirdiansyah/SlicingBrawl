@@ -138,26 +138,26 @@ body {
 }
 
 .course .title-course {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.course .bg-title {
+  position: absolute;
+  bottom: 0;
+  left: 16%;
+  width: 9%;
+  height: 15px;
+  background-color: #ffe3c0;
+  z-index: -1;
+}
+
 .course .title-course h3,
 .populer .title-populer h3,
 .event .title-populer h3 {
-  position: relative;
   font-size: 24px;
-}
-
-.course .title-course h3::after {
-  content: "";
-  position: absolute;
-  width: 20%;
-  height: 20px;
-  color: #ffe3c0;
-  bottom: 0;
-  right: 0;
 }
 
 .course .title-course .categories {
@@ -285,8 +285,19 @@ body {
   padding: 2rem 5rem;
 }
 
-.title-populer {
+.populer .title-populer {
+  position: relative;
   text-align: center;
+}
+
+.populer .bg-title {
+  position: absolute;
+  bottom: 0;
+  right: 41%;
+  width: 8%;
+  height: 15px;
+  background-color: #ffe3c0;
+  z-index: -1;
 }
 
 .populer-row {
@@ -379,6 +390,20 @@ body {
 .event {
   position: relative;
   padding: 2rem 5rem;
+}
+
+.event .title-populer {
+  position: relative;
+}
+
+.event .bg-title {
+  position: absolute;
+  bottom: 0;
+  left: 6.5%;
+  width: 23%;
+  height: 15px;
+  background-color: #ffe3c0;
+  z-index: -1;
 }
 
 .event-row {
